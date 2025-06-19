@@ -18,6 +18,10 @@ app.get("/", (req, res) => {
     res.render("index");
 });
 
+app.get("/ubc", (req, res) => {
+    res.render("ubc");
+});
+
 app.listen(3000, () => {
     console.log(chalk.bgHex("#ff69b4").white.bold(" 💥 EXPRESS SERVER STARTED 💥 "));
     console.log(chalk.green("Running at: ") + chalk.cyan("http://localhost:3000"));
