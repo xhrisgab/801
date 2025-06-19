@@ -7,6 +7,7 @@ const app = express();
 //definimos las carpetas publicas
 app.use("/css", express.static(path.join(__dirname, "public", "css")));
 app.use("/js", express.static(path.join(__dirname, "public", "js")));
+app.use("/img", express.static(path.join(__dirname, "public", "img")));
 
 //definimos el uso de ejs para plantillas y la carpeta de vistas 
 app.set("view engine", "ejs");
